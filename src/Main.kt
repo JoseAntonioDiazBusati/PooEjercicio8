@@ -26,6 +26,8 @@ fun main() {
     conjunto.anadirLibro(libro1)
     conjunto.anadirLibro(libro2)
 
+    println(conjunto)
+
     conjunto.eliminarLibro(libro1)
     conjunto.eliminarLibro(libro2)
 

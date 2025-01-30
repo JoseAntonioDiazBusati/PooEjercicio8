@@ -11,9 +11,4 @@ class ConjuntoLibros(val conjunto: MutableList<Libro>) {
     fun mostrarMayorCalificacion(libro: Libro){
         return  conjunto.sortBy { libro.calificacion }
     }
-
-    override fun toString(): String {
-        return ""
-    }
-
 }
