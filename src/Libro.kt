@@ -1,4 +1,5 @@
 class Libro(val titulo: String, val autor: String, val numPaginas: Int, calificacion: Int) {
+
     var calificacion: Int = calificacion
         set(value) {
             require(value in 0..10) { "La calificación debe estar entre 0 y 10." }

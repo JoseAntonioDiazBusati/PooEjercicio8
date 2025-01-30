@@ -16,5 +16,21 @@ que el conjunto esté vacío, volver a añadir un libro y mostrar el contenido f
 */
 
 fun main() {
+    val libro1 = Libro("Buscando el oro", "Pedro Sanchez", 127,6)
+    val libro2 = Libro("Lo que el Gobierno se llevó", "Diegooool",567,10)
 
+    val montonLibros = mutableListOf<Libro>()
+
+    val conjunto = ConjuntoLibros(montonLibros)
+
+    conjunto.anadirLibro(libro1)
+    conjunto.anadirLibro(libro2)
+
+    conjunto.eliminarLibro(libro1)
+    conjunto.eliminarLibro(libro2)
+
+    val libro3 = Libro("Lágrimas desordenadas","Melendi",34,10)
+    conjunto.anadirLibro(libro3)
+
+    println(conjunto)
 }
